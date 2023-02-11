@@ -1,0 +1,93 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.shopfvl.controller;
+
+import com.mycompany.shopfvl.model.Tienda;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+
+/**
+ *
+ * @author Pedro
+ */
+@Named
+@ApplicationScoped
+public class TiendaController extends AbstractController<Tienda> {
+    @Inject
+    TiendaController tiendaController;
+    public TiendaController() {
+        super(Tienda::new);
+        //this.load();
+    }
+
+    @Override
+    @PostConstruct
+    public void load() {
+        this.create();
+        this.getSelected().setActivo(true);
+        //this.getSelected().setId(-1);
+        this.getSelected().setNombre("Alimentacion Luna");
+        this.getSelected().setDireccion("Benijofar");
+        this.getSelected().setGps("Latitud: 38 Longitud: -0.7 Latitud: 38 4 41 Norte Longitud: 0 44 17 Oeste");
+        this.add();
+
+        this.create();
+        this.getSelected().setActivo(true);
+        //this.getSelected().setId(-2);
+        this.getSelected().setNombre("Max Donal");
+        this.getSelected().setDireccion("Ciudad Quesada");
+        this.getSelected().setGps("Latitud: 38 Longitud: -0.7 Latitud: 38 4 41 Norte Longitud: 0 44 17 Oeste");
+        
+        this.add();
+
+        this.create();
+        this.getSelected().setActivo(true);
+        //this.getSelected().setId(3);
+        this.getSelected().setNombre("La Pura");
+        this.getSelected().setDireccion("Formentera");
+        this.getSelected().setGps("Latitud: 38 Longitud: -0.7 Latitud: 38 4 41 Norte Longitud: 0 44 17 Oeste");
+        this.add();
+    }
+
+    public String remove() {
+        if (this.getSelected() != null) {
+            /*if (this.propiedadcontroller.getItems().stream().filter(item -> {
+                return item.getTienda() == this.getSelected();
+            }).count() == 0) {*/
+                this.repositorio.remove(this.getSelected());
+                return "remove";
+            /*} else {
+                return "";
+            }*/
+
+        }
+        //se tiene que poner el error
+        return "";
+
+    }
+
+    @Override
+    public String preEdit() {
+        return "edit";
+    }
+
+    @Override
+    public String add() {
+        //si es nuevo
+        if (this.getSelected().getId() == -1) {
+            this.getSelected().setId(this.repositorio.getAll().size() + 1);
+            this.repositorio.create(this.getSelected());
+        } else {
+            this.repositorio.update(this.getSelected());
+            //si ya existe
+    
+        }
+        return "sucess";
+    }
+}

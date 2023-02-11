@@ -1,0 +1,13 @@
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/resources/JakartaEE91Resource.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/model/Promocion.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/model/Tienda.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/JakartaRestConfiguration.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/repository/IRepository.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/TiendaController.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/AbstractController.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/repository/MemoryRepository.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/model/Categoria.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/PromocionController.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/CategoriaController.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/model/ICopyable.java
+/Users/franvazquez/NetBeansProjects/shopFVL/src/main/java/com/mycompany/shopfvl/controller/IController.java

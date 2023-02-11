@@ -1,0 +1,13 @@
+com/mycompany/shopfvl/controller/repository/IRepository.class
+com/mycompany/shopfvl/resources/JakartaEE91Resource.class
+com/mycompany/shopfvl/controller/AbstractController.class
+com/mycompany/shopfvl/JakartaRestConfiguration.class
+com/mycompany/shopfvl/model/Tienda.class
+com/mycompany/shopfvl/controller/PromocionController.class
+com/mycompany/shopfvl/model/Categoria.class
+com/mycompany/shopfvl/controller/IController.class
+com/mycompany/shopfvl/controller/CategoriaController.class
+com/mycompany/shopfvl/controller/repository/MemoryRepository.class
+com/mycompany/shopfvl/controller/TiendaController.class
+com/mycompany/shopfvl/model/ICopyable.class
+com/mycompany/shopfvl/model/Promocion.class
